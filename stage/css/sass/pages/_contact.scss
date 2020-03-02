@@ -1,0 +1,103 @@
+.contact {
+  background-color: $black;
+
+  // Start Contact Info 
+  .contact-info {
+    margin-bottom: 40px;
+    ul {
+      li {
+        margin-bottom: 20px;
+        h5 {
+          font-size: 17px;
+          color: $textWhite;
+          text-transform: none;
+          span {
+            display: block;
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: $pargColor;
+          }
+          i {
+            margin-right: 8px;
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+  // End Contact Info 
+
+  // Start Social Media 
+  .social-media {
+    h6 {
+      color: $pargColor;
+      margin-bottom: 16px;
+    }
+    .social {
+      li {
+        margin-right: 18px;
+        margin-bottom: 10px;
+        &:hover {
+          a {
+            background-color: $primary;
+            color: #fff;
+          }
+        }
+        a {
+          width: 35px;
+          height: 35px;
+          line-height: 35px;
+          color: $primary;
+          border: 1px solid $primary;
+          border-radius: 50%;
+          text-align: center;
+          display: block;
+          transition: 0.4s;
+          i {
+
+          }
+        }
+      }
+    }
+  }
+  // Start Social Media 
+
+
+  // Start Contact Form 
+  .contact-form {
+
+    .form-group {
+      margin-bottom: 30px;
+      .icon {
+        position: absolute;
+        top: 16px;
+        left: 40px;
+        font-size: 16px;
+        opacity: .3;
+        color: #eee;
+      }
+      .form-control {
+        background: #333;
+        border: 1px solid #444;
+        color: #fff;
+        height: 50px;
+        border-radius: 30px;
+        padding-left: 55px;
+        margin-bottom: 6px;
+      }
+      #formMsg {
+        display: none;
+        color: red;
+        margin-left: 20px;
+      }
+      textarea {
+        height: 150px !important;
+      }
+      button {
+        margin-left: 15px;
+      }
+    }
+  }
+  // End Contact Form 
+
+}

@@ -1,0 +1,66 @@
+
+<iframe name='hidden_iframe' id='hidden_iframe' style='display: none;'></iframe>
+
+section(class='contact pd-top-btm page page4')
+  .container
+    // Page Title 
+    .page-title
+      h2 get #[span in touch]
+      p  I’m always open to discussing product design work or partnerships.
+    .row
+      // Start Contact Info 
+      .col-md-4
+        .contact-info
+          ul(class='list-unstyled')
+            li
+              h5 #[span Email]
+                i.fa.fa-envelope-o
+                | ahmedbfront@gmail.com
+            li
+              h5 #[span Phone]
+                i.fa.fa-whatsapp 
+                | +2 0120 574 0051
+        // End Contact Info 
+
+        // Start Social Media 
+        .social-media
+          h6 Social Profiles
+          ul(class='social list-unstyled d-flex')
+            li: a(href='https://www.linkedin.com/in/ahmedbfront' target='_blank' title="Linkedin")
+              i.fa.fa-linkedin
+              
+            li: a(href='https://twitter.com/ahmedbfront' target='_blank' title="Twitter")
+              i.fa.fa-twitter
+              
+            li: a(href='https://github.com/ahmedbfront' target='_blank' title="Github")
+              i.fa.fa-git
+              
+            li: a(href='https://codepen.io/AhmedBFront' target='_blank' title="Codepen")
+              i.fa.fa-codepen
+        // End Social Media 
+
+      // Start Contact Form 
+      .col-md-8
+        form(class='contact-form' id='form' action='https://docs.google.com/forms/u/3/d/e/1FAIpQLSeI6rbe1UwCmHRWSPipmQG16SXUV_r6NMWn05C8oQWaHi5KDw/formResponse' method='post' target='hidden_iframe' onsubmit='submitted=true')
+          .row
+            div(class='form-group col-md-6')
+              i.icon.fa.fa-user
+              input(class='form-control' id='formName' required type="text" name="entry.715477545" placeholder='Your Name')
+              span#formMsg Please write your name correctly
+
+            div(class='form-group col-md-6')
+              i.icon.fa.fa-envelope
+              input(class='form-control' id='formEmail' required type="email" name="entry.93322398" placeholder='Your Email')
+              span#formMsg Please write your email correctly
+
+            div(class='form-group col-xl-12')
+              i.icon.fa.fa-comments
+              textarea(class='form-control auto-direction' id='formMessage' required name="entry.777026635" placeholder='Your Message')
+              span#formMsg Please write your message
+
+            div(class='form-group')
+              button(class='btn btns' type="submit" value="Submit"): span
+                i.fa.fa-send
+                |  Send your Message
+      // End Contact Form 
+    

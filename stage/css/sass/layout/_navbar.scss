@@ -1,0 +1,54 @@
+// Start Navbar 
+.navbar {
+  background-color: $background;
+  box-shadow: 0 0 23px #00000061;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  overflow: hidden;
+  .navbar-brand {
+    color: $primary;
+    font-size: 22px;
+    font-family: 'Yeon Sung';
+    &:hover,
+    &:focus {
+    color: $primary;
+
+    }
+  }
+  ul.navbar-nav {
+    .nav-item {
+      position: relative;
+      margin: 0 12px;
+      .nav-link {
+        color: $white;
+        padding: 0;
+        transition: all .4s;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        left: 50px;
+        right: 50px;
+        bottom: -18px;
+        background-color: $primary;
+        height: 4px;
+        transition: all .4s;
+      }
+      &:hover, &.active {
+        .nav-link {
+          color: $primary;
+        }
+        &:after {
+          left: 0;
+          right: 0;
+        }
+      }
+    }
+  }
+}
+// End Navbar 
+
+

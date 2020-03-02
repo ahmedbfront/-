@@ -1,0 +1,31 @@
+@import 'sass/variables/colors';
+@import 'sass/layout/global';
+
+@import 'sass/helpers/buttons';
+
+@import 'sass/layout/navbar';
+
+@import 'sass/pages/home';
+@import 'sass/layout/header';
+@import 'sass/pages/about';
+
+// Start Pages Portfolio 
+@import 'sass/pages/portfolio';
+
+@import 'sass/pages/portfolio-projects';
+
+// Start Section Hover 
+@import 'sass/pages/port-hover/hover-button.scss';
+@import 'sass/pages/port-hover/hover-card.scss';
+@import 'sass/pages/port-hover/hover-responsive.scss';
+
+// Start Section Activity 
+@import 'sass/pages/port-activity/active-slider.scss';
+@import 'sass/pages/port-activity/active-accordion.scss';
+@import 'sass/pages/port-activity/active-responsive.scss';
+// End Pages Portfolio 
+
+@import 'sass/pages/contact';
+
+@import 'sass/layout/mediaqueries';
+

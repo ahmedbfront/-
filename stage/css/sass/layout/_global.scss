@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Poppins:400,500,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Sriracha&display=swap'); 
+//font-family: 'Sriracha', cursive;
+
+@import url('https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap');
+// font-family: 'Yeon Sung', ;
+
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
+  background-color: $background;
+}
+
+
+a,
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+
+}
+
+
+.pd-top-btm {
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+
+.page-title {
+  margin: 40px 0 60px;
+  text-align: center;
+  text-transform: uppercase;
+  h2 {
+    color: $white;
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    span {
+      color: $primary;
+    }
+  }
+  p {
+    position: relative;
+    display: inline-block;
+    color: $pargColor;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 11px;
+      left: -40px;
+      background-color: $primary;
+      width: 30px;
+      height: 2px;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 11px;
+      right: -40px;
+      background-color: $primary;
+      width: 30px;
+      height: 2px;
+    }
+  }
+}
+
+
+.container-hover-activity{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
+  hr {
+    width: 80%;
+    background-color: #555;
+    margin: 4rem;
+  }
+}
+
+
+@media (max-width: 576px)  {
+
+  // Start Page Title 
+  .page-title {
+    margin: 40px 0;
+    h2 {
+      font-size: 36px;
+    }
+    p {
+      font-size: 14px;
+      &:before, &:after {
+        display: none;
+      }
+    }
+  }
+  // End Page Title 
+
+}
+
+
+.home-site {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 1.5s;
+  perspective: 3000;
+  transform-style: preserve-3d;
+  .page {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: rotateX(180deg) scale(0.3);
+    backface-visibility: hidden;
+    transition: transform 1s ease-in-out;
+    will-change: transform;
+    overflow: auto;
+  }
+  &.active-page1 {
+    transform: translateY(0%);
+    .page1 {
+      transform: scale(1);
+    }
+  }
+
+  &.active-page2 {
+    transform: translateY(-100%);
+    .page2 {
+      transform: scale(1);
+    }
+  }
+  &.active-page3 {
+    transform: translateY(-200%);
+    .page3 {
+      transform: scale(1);
+    }
+  }
+  &.active-page4 {
+    transform: translateY(-300%);
+    .page4 {
+      transform: scale(1);
+    }
+  }
+}

@@ -1,0 +1,243 @@
+// Start Button 
+.page-button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  a {
+    position: relative;
+    background: $btn-hvr;
+    color: #666;
+    padding: 14px 30px;
+    margin: 12px;
+    transform: perspective(1px) translateZ(0);
+    transition: all .4s;
+    overflow: hidden;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $primary;
+      transition: all .4s;
+      z-index: -1;
+    }
+    &:hover {
+      color: #fff;
+    }
+    // Start Button 1 
+    &:nth-of-type(1) {
+      &:before {
+        
+        transform: scaleX(0);
+        transform-origin: 0 50%;  
+      }
+      &:hover {
+      color: white;
+
+        &:before {
+          transform: scaleX(1);
+        }
+      }
+    }
+    // Start Button 2 
+    &:nth-of-type(2) {
+      &:before {
+        transform: scaleY(0);
+        transform-origin: 50% 0;  
+      }
+      &:hover {
+        &:before {
+          transform: scaleY(1);
+        }
+      }
+    }
+    // Start Button 3 
+    &:nth-of-type(3) {
+      &:before {
+        transform: scaleX(0);
+        transform-origin: 0 50%;  
+      }
+      &:hover {
+        &:before {
+          transform: scaleX(1);
+          transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+        }
+      }
+    }
+    // Start Button 4 
+    &:nth-of-type(4) {
+      &:before {
+        transform: scaleY(0);
+        transform-origin: 50% 0;  
+      }
+      &:hover {
+        &:before {
+          transform: scaleY(1);
+          transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+        }
+      }
+    }
+    // Start Button 5 
+    &:nth-of-type(5) {
+      &:before {
+        transform: scale(0);
+        border-radius: 100%;
+      }
+      &:hover {
+        &:before {
+          transform: scale(2);
+        }
+      }
+    }
+    // Start Button 6 
+    &:nth-of-type(6) {
+      background-color: $primary;
+      &:before {
+        transform: scale(2);
+        border-radius: 100%;
+        background-color: $btn-hvr;
+      }
+      &:hover {
+        &:before {
+          transform: scale(0);
+        }
+      }
+    }
+    // Start Button 7 
+    &:nth-of-type(7) {
+      background-color: $primary;
+      &:before {
+        transform: scaleX(1);
+        transform-origin: 50%;
+        background-color: $btn-hvr;
+      }
+      &:hover {
+        &:before {
+          transform: scaleX(0);
+        }
+      }
+    }
+    // Start Button 8 
+    &:nth-of-type(8) {
+      &:before {
+        transform: scaleX(0);
+        transform-origin: 50%;
+        background-color: $primary;
+      }
+      &:hover {
+        &:before {
+          transform: scaleX(1);
+        }
+      }
+    }
+    // Start Button 9 
+    &:nth-of-type(9) {
+      background-color: $primary;
+      &:before {
+        transform: scaleY(1);
+        transform-origin: 50%;
+        background-color: $btn-hvr;
+      }
+      &:hover {
+        &:before {
+          transform: scaleY(0);
+        }
+      }
+    }
+    // Start Button 10 
+    &:nth-of-type(10) {
+      color: #666;
+      &:before {
+        top: auto;
+        right: 100%;
+        height: 6px;
+      }
+      &:hover {
+        &:before {
+          right: 0;
+        }
+      }
+    }
+    // Start Button 11 
+    &:nth-of-type(11) {
+      color: #666;
+      &:before {
+        top: auto;
+        left: 50%;
+        right: 50%;
+        height: 6px;
+      }
+      &:hover {
+        &:before {
+          left: 0;
+          right: 0;
+        }
+      }
+    }
+    // Start Button 12 
+    &:nth-of-type(12) {
+      color: #666;
+      &:before {
+        height: 6px;
+        transform: translateY(-6px);
+      }
+      &:hover {
+        &:before {
+          transform: translateY(0);
+        }
+      }
+    }
+    // Start Button 13 
+    &:nth-of-type(13) {
+      color: #666;
+      &:before {
+        top: auto;
+        height: 6px;
+        transform: translateY(6px);
+      }
+      &:hover {
+        &:before {
+          transform: translateY(0);
+        }
+      }
+    }
+    // Start Button 14 
+    &:nth-of-type(14) {
+      background-color: transparent;
+      border:2px solid $primary;
+      border-top:0px;
+      border-bottom:0px;
+      color: $primary;
+      height: 55px;
+      overflow: visible;
+      &:hover {
+        color: #222;  
+        border:2px solid $primary;
+        background-color: $primary;
+        &:before {
+          top: -12px;
+        }
+        &:after {
+          bottom: -12px;
+        }
+      }
+      &:before {
+        height: 2px;
+        background:$primary;
+      }
+      &:after {
+        content: '';
+        height: 2px;
+        background:$primary;
+        transition:all 0.4s;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+    }
+  }
+}
+// End Button 

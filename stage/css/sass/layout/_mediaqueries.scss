@@ -1,0 +1,146 @@
+
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+  // Start Home Page 
+  .header {
+    // Start 
+    .main-text-container {
+      .main-text {
+        p {
+          width: 80%;
+        }
+      }
+    }
+  }
+  // End Home Page 
+
+}
+
+
+@media(max-width:991.98px) {
+
+  // Start Home Page 
+  .header {
+    // Start 
+    .main-text-container {
+      width: 100%;
+      padding: 0 14px;
+      img {
+        display: none;
+      }
+      .main-text {
+        width: 100%;
+        margin-left: 0;
+        h2 {
+          font-size: 36px;
+          margin: 12px 0 0;
+        }
+        p {
+          font-size: 16px;
+          line-height: 1.7;
+        }
+        .call-to-actions-home {
+          a {
+            width: 70%;
+            &:first-of-type {
+              margin-right: 0;
+              margin-bottom: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+  // End Home Page 
+
+  // Start About Section 
+  .about {
+    // Start Personal Infos 
+    .image-container {
+      max-width: none;
+      margin-bottom: 60px;
+    }
+    // End Personal Infos 
+    hr {
+      margin: 3rem 0;
+    }
+  }
+  // End About Section 
+
+
+}
+
+@media (max-width: 576px) {
+
+  .main-text-container {
+    .main-text {
+      h2 {
+        span {
+          display: block;
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+}
+
+@media (min-width: 576px) {
+
+  // Start Home Page 
+  .header {
+    // Start 
+    .main-text-container {
+      .main-text {
+        .call-to-actions-home {
+          a {
+            width: auto;
+            &:first-of-type {
+              margin-right: 30px;
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  // End Home Page س
+
+}
+
+@media (max-width: 576px) {
+
+  // Start About Section 
+  .about {
+    // Start Personal Infos 
+    .image-container {
+      margin-bottom: 40px;
+      &:before {
+        display: none;
+      }
+    }
+    ul {
+      li {
+        margin-bottom: 20px;
+      }
+    }
+    // End Personal Infos 
+  }
+  // End About Section 
+  
+}
+
+
+
+
+
+

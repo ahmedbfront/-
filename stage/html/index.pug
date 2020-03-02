@@ -1,0 +1,29 @@
+- var pageTitle = 'Ahmed Badr';
+<!DOCTYPE html>
+html(lang="en")
+  head
+    // Site Meta 
+    include pug/layout/meta
+    // Site Style 
+    include pug/layout/styles
+  body
+    // Navbar Home 
+    include pug/layout/navbar
+    
+    .home-site.active-page1
+      // Home Page 
+      include pug/layout/header
+
+      // About Page 
+      include pug/components/about
+
+      // Portfolio Page 
+      include pug/components/portfolio
+      
+      // Contact Page 
+      include pug/components/contact
+
+    // Site Script  
+    include pug/layout/scripts
+
+    

@@ -1,0 +1,77 @@
+// Start Home Page 
+.header {
+  background-image: url('../img/header.jpeg');
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  z-index: 99;
+  &:after {
+    content: '';
+    background-color: rgba(0,0,0,.85);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  // Start 
+  .main-text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      max-width: 320px;
+      height: 320px;
+      border: 10px solid #ffffff1a;
+      border-radius: 50%;
+    }
+    .main-text {
+      width: 540px;
+      margin-left:80px;
+      color: $white;
+      h6 {
+        color: $offWhite;
+        font-size: 18px;
+      }
+      h2 {
+        font-size: 40px;
+        margin: 18px 0 10px;
+        text-transform: inherit;
+        span {
+        color: $textColor;
+        padding: 0;
+        }
+      }
+      p {
+        color: $offWhite;
+        margin: 10px 0 26px;
+        font-size: 17px;
+        line-height: 2;
+      }
+      .call-to-actions-home {
+        a {
+          &:hover  {
+            color: $white;
+          }
+        }
+        .btn-port {
+          background-color: transparent;
+          color: $textColor;
+          border: 1px solid $primary;
+          &:hover {
+            &:before {
+              background: $primary;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// End Home Page 
+
