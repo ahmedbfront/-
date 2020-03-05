@@ -18,6 +18,113 @@
 
     }
   }
+
+  // Start Navbar Phone 
+  .nav-phone {
+    position: absolute;
+    top: 5px;
+    right: 5%;
+    width: 300px;
+    background: #535353;
+    color: #fff;
+    border-bottom-left-radius: 100%;
+    border-top-left-radius: 2px;
+    overflow: hidden;
+    // clip-path: circle(24px at 32px 24px);
+    clip-path: circle(23px at 270px 24px);
+    transition: all .4s;
+    &:hover {
+      transition-timing-function: ease-out;
+      transition-duration: .75s;
+      // clip-path: circle(390px at 150px 24px);
+      clip-path: circle(310px at 80px);
+
+      a {
+        transition-delay: .2s;
+      transition-property: all;
+      transition-duration: .7s;
+        &:nth-of-type(1) {
+          margin-top: 33px;
+          padding-left: 40px;
+        }
+        &:nth-of-type(2) {
+          padding-left: 70px;
+        }
+        &:nth-of-type(3) {
+          padding-left: 120px;
+        }
+        &:nth-of-type(4) {
+          padding-left: 200px;
+          padding-bottom: 8px;
+        }
+      }      
+    }
+    // Start Icone 
+    .navicon {
+      position: absolute;
+      right: 0;
+      padding: 23px 20px;
+      cursor: pointer;
+      transform-origin: 32px 24px;
+      span {
+        position: relative;
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: #fff;
+        
+        &:before, &:after {
+          content: '';
+          display: block;
+          width: 20px;
+          height: 2px;
+          background: #fff;
+          position: absolute;
+        }
+        &:before { 
+          top: -7px; 
+        }
+        &:after { 
+          top: 7px; 
+        }
+      }
+    }
+    // Start Link 
+    a {
+      display: block;
+      line-height: 50px;
+      padding: 0 20px;
+      color: inherit;
+      cursor: pointer;
+      user-select: none;
+      
+      &:nth-of-type(1) {
+        margin-top: 33px;
+        padding-left: 55px;
+      }
+      &:nth-of-type(2) {
+        padding-left: 90px;
+      }
+      &:nth-of-type(3) {
+        padding-left: 150px;
+      }
+      &:nth-of-type(4) {
+        padding-left: 240px;
+        padding-bottom: 8px;
+      }
+     
+
+      &:hover,
+      &:active {
+        background: $primary;
+        transition-delay: 0s;
+        transition: all .4s;
+      }
+    }
+  }
+  // End Navbar Phone 
+
+  // Start Link Navbar Home 
   ul.navbar-nav {
     .nav-item {
       position: relative;
@@ -51,4 +158,19 @@
 }
 // End Navbar 
 
+@media (min-width: 992px) {
+  // Start Navbar Phone 
+  .nav-phone {
+    display: none;
+  }
+}
 
+@media (max-width: 991.98px) {
+  // Start Navbar Home 
+  .navbar {
+    overflow: visible;
+    .navbar-toggler {
+      display: none;
+    }
+  }
+}
