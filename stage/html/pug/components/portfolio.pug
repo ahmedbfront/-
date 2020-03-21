@@ -1,23 +1,19 @@
-// Start Portfolio Section 
+// Start Section Portfolio 
 section(class='portfolio pd-top-btm page page3')
-  .container
+  // Page Title 
+  .page-title
+    h2 My #[span Portfolio]
+    p  A FEW RECENT DESIGN AND CODING PROJECTS. WANT TO SEE MORE? EMAIL ME
+
+  // Portfolio Nav 
+  ul(class='nav-port list-unstyled')
+    li(class='active' data-section='.port-projects') Projects 
+    li(data-section='.section-hover') Hover
+    li(data-section='.section-activity') Activity
   
-    // Page Title 
-    .page-title
-      h2 My #[span Portfolio]
-      p  A FEW RECENT DESIGN AND CODING PROJECTS. WANT TO SEE MORE? EMAIL ME
- 
-    // Portfolio Nav 
-    ul(class='nav-port list-unstyled d-flex justify-content-center')
-      li(class='active' data-section='.port-projects') Projects 
+  div.show-portfolio#show-portfolio
+    include ./portfolio-projects
+    include ./portfolio-hover
+    include ./portfolio-activity
 
-      li(data-section='.section-hover') Hover
-
-      li(data-section='.section-activity') Activity
-    
-    div.show-portfolio#show-portfolio
-      include ./portfolio-projects
-      include ./portfolio-hover
-      include ./portfolio-activity
-
-// End Portfolio Section 
+// End Section Portfolio 

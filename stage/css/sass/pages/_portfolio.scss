@@ -1,8 +1,10 @@
-// Start Portfolio Section 
+// Start Section Portfolio 
 .portfolio {
   background-color: $black;
   // Portfolio Nav
   .nav-port {
+    display: flex;
+    justify-content: center;
     margin-bottom: 60px;
     li {
       position: relative;
@@ -65,10 +67,11 @@
     }
   }
 }
-// End Portfolio Section 
+// End Section Portfolio 
 
 
 @media (max-width: 420px) {
+  // Portfolio Nav
   .nav-port {
     li {
       margin: 0 !important;

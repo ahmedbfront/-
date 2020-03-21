@@ -21,39 +21,18 @@ $(function() {
     }
     
   });
-  
-
-
-
-
-
-
-  // Ahmed 
-
-  $('.cd-nav-trigger').on('click', function () {
-
-
-    $('.ahhm').css({
-
-      'height': 0,
-      'padding': '27px'
-
-    });
-
-
-  });
-
-
-
-  // Ahmed 
-
-
 
 });
 
+// Start Loding Site 
+$(window).load(function () {
+
+  $('.preloader').addClass('loaded');
+
+});
+// End Loding Site 
 
 
 
 
-
-
+ 

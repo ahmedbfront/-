@@ -7,8 +7,12 @@ $(".nav-port li").on("click", function() {
   
   $($(this).data('section')).fadeIn(300);
 
-
 });
+
+
+if ($(window).width() <= 992) {
+  $('.portfolio .nav-port').css('display', 'none');
+}
 
 
 

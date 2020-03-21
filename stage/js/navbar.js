@@ -15,7 +15,21 @@ $(".navbar .nav-item").on("click", function(e) {
 });
 
 
-// Navbar Phone 
+
+$('.nav-phone .navicon').on('click', function () {
+
+  $(this).toggleClass('hav-icon');
+
+  $('.nav-phone').toggleClass('clip');
+
+});
+
+
 $('.nav-phone a').on('click', function (e) {
   e.preventDefault();
+
+  $('.nav-phone').removeClass('clip');
+
+  $('.nav-phone .navicon').removeClass('hav-icon');
+
 });

@@ -1,109 +1,95 @@
-// Start Angular & Js Section 
+// Start Section Activity 
 section.section-activity
-  .container.container-hover-activity
+  .container
+    .activity-arrea
+      .activity-box
+        .activity-content
+          // Start Slider-2 
+          .slider-2
+            .slider-container
+              .slide-number#slide-number
+              img(src='img/hover-js/activity1.jpg' alt='Image')
+              img(src='img/hover-js/activity2.webp' alt='Image')
+              img(src='img/hover-js/activity3.jpg' alt='Image')
+              img(src='img/hover-js/activity4.jpg' alt='Image')
+              img(src='img/hover-js/activity5.jpg' alt='Image')
 
+            .slider-controls
+              span.prev#prev Previous 
+              span.indicators#indicators
+              span.next#next Next
+          // End Slider-2 
+      .activity-box
+        .activity-content
+          // Start Slider Using Css 
+          .slider-by-css
+            .slidershow-by-css
+              .slides-by-css
+                input#r1(type='radio' name='r' checked)
+                input#r2(type='radio' name='r')
+                input#r3(type='radio' name='r')
+                input#r4(type='radio' name='r')
+                .slide-by-css.s1
+                  img.img-fluid(src='img/hover-js/activity2.webp' alt='Image')
+                .slide-by-css
+                  img.img-fluid(src='img/hover-js/activity1.jpg' alt='Image')
+                .slide-by-css
+                  img.img-fluid(src='img/hover-js/activity3.jpg' alt='Image')
+                .slide-by-css
+                  img.img-fluid(src='img/hover-js/activity4.jpg' alt='Image')
+                .navigation-by-css
+                  label.bar(for='r1')
+                  label.bar(for='r2')
+                  label.bar(for='r3')
+                  label.bar(for='r4')
+          // End Slider Using Css 
+      .activity-box
+        .activity-content
+          // Start Accordion-2 
+          .accordion-2
+            button.show-accordion Section 1
+            .desc-accordion
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam reiciendis magni in odit id necessitatibus veniam corporis tenetur, voluptatibus a illo consequatur iste dicta quaerat, minus minima iusto vitae magnam.
 
-    // Start Slider Using Css 
-    .slider-by-css
-      .sidershow-by-css
-        .slides-by-css
-          input#r1(type='radio' name='r' checked)
-          input#r2(type='radio' name='r')
-          input#r3(type='radio' name='r')
-          input#r4(type='radio' name='r')
-          input#r5(type='radio' name='r')
-          .slide-by-css.s1
-            img.img-fluid(src='https://images.freeimages.com/images/large-previews/89a/one-tree-hill-1360813.jpg' alt='Image')
-          .slide-by-css
-            img.img-fluid(src='https://images.freeimages.com/images/large-previews/3dd/tree-and-grass-1-1374829.jpg' alt='Image')
-          .slide-by-css
-            img.img-fluid(src='https://images.freeimages.com/images/large-previews/f91/tree-and-grass-1-1355655.jpg' alt='Image')
-          .slide-by-css
-            img.img-fluid(src='https://images.freeimages.com/images/large-previews/86b/scotland-2-1402647.jpg' alt='Image')
-          .slide-by-css
-            img.img-fluid(src='https://images.freeimages.com/images/large-previews/026/loch-in-scotland-1397202.jpg' alt='Image')
-          .navigation-by-css
-            label.bar(for='r1')
-            label.bar(for='r2')
-            label.bar(for='r3')
-            label.bar(for='r4')
-            label.bar(for='r5')
-    // End Slider Using Css 
+            button.show-accordion Section 2
+            .desc-accordion
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam reiciendis magni in odit id necessitatibus veniam corporis tenetur, voluptatibus a illo consequatur iste dicta quaerat, minus minima iusto vitae magnam.
 
-    hr
+            button.show-accordion Section 3
+            .desc-accordion
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam reiciendis magni in odit id necessitatibus veniam corporis tenetur, voluptatibus a illo consequatur iste dicta quaerat, minus minima iusto vitae magnam.
+          // End Accordion-2 
+      .activity-box
+        .activity-content
+          // Start Accordion-1 
+          .accordion_1
+            .accordion-1
+              ul.list-unstyled#accordion-1
+                li
+                  a.active(href='#'): i.fa.fa-gift
+                  .box.active
+                    h2 Gift
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ab ipsam corporis porro ratione. Incidunt vel fuga minus facilis possimus ducimus provident eaque sit. Commodi accusantium recusandae amet eveniet ipsam!
+                li
+                  a(href='#'): i.fa.fa-glass
+                  .box
+                    h2 Glass
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ab ipsam corporis porro ratione. Incidunt vel fuga minus facilis possimus ducimus provident eaque sit. Commodi accusantium recusandae amet eveniet ipsam!
+                li
+                  a(href='#'): i.fa.fa-globe
+                  .box
+                    h2 Globe
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ab ipsam corporis porro ratione. Incidunt vel fuga minus facilis possimus ducimus provident eaque sit. Commodi accusantium recusandae amet eveniet ipsam!
+                li
+                  a(href='#'): i.fa.fa-graduation-cap
+                  .box
+                    h2 Graduate
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ab ipsam corporis porro ratione. Incidunt vel fuga minus facilis possimus ducimus provident eaque sit. Commodi accusantium recusandae amet eveniet ipsam!
+                li
+                  a(href='#'): i.fa.fa-users
+                  .box
+                    h2 Groups
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ab ipsam corporis porro ratione. Incidunt vel fuga minus facilis possimus ducimus provident eaque sit. Commodi accusantium recusandae amet eveniet ipsam!
+          // End Accordion-1 
 
-
-    // Start Slider-4 
-    .slider-2
-      .slider-container
-        .slide-number#slide-number
-        img(src="https://via.placeholder.com/800" alt='Image')
-        img(src="https://via.placeholder.com/800/250" alt='Image')
-        img(src="https://via.placeholder.com/800/10" alt='Image')
-        img(src="https://via.placeholder.com/800/290" alt='Image')
-        img(src="https://via.placeholder.com/800/202" alt='Image')
-
-      .slider-controls
-        span.prev#prev Previous 
-        span.indicators#indicators
-        span.next#next Next
-    // End Slider-4 
-
-    hr
-
-    // Start Accordion-1 
-    .accordion_1
-      .accordion-1
-        ul.list-unstyled#accordion-1
-          li
-            a.active(href='#'): i.fa.fa-gift
-            .box.active
-              h2 Gift
-              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ab ipsam corporis porro ratione. Incidunt vel fuga minus facilis possimus ducimus provident eaque sit. Commodi accusantium recusandae amet eveniet ipsam!
-          li
-            a(href='#'): i.fa.fa-glass
-            .box
-              h2 Glass
-              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ab ipsam corporis porro ratione. Incidunt vel fuga minus facilis possimus ducimus provident eaque sit. Commodi accusantium recusandae amet eveniet ipsam!
-          li
-            a(href='#'): i.fa.fa-globe
-            .box
-              h2 Globe
-              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ab ipsam corporis porro ratione. Incidunt vel fuga minus facilis possimus ducimus provident eaque sit. Commodi accusantium recusandae amet eveniet ipsam!
-          li
-            a(href='#'): i.fa.fa-graduation-cap
-            .box
-              h2 Graduate
-              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ab ipsam corporis porro ratione. Incidunt vel fuga minus facilis possimus ducimus provident eaque sit. Commodi accusantium recusandae amet eveniet ipsam!
-          li
-            a(href='#'): i.fa.fa-users
-            .box
-              h2 Groups
-              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ab ipsam corporis porro ratione. Incidunt vel fuga minus facilis possimus ducimus provident eaque sit. Commodi accusantium recusandae amet eveniet ipsam!
-    // End Accordion-1 
-
-
-    hr
-
-
-    // Start Accordion-2 
-    .accordion-2
-      button.show-accordion Section 1
-      .desc-accordion
-        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam reiciendis magni in odit id necessitatibus veniam corporis tenetur, voluptatibus a illo consequatur iste dicta quaerat, minus minima iusto vitae magnam.
-
-      button.show-accordion Section 2
-      .desc-accordion
-        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam reiciendis magni in odit id necessitatibus veniam corporis tenetur, voluptatibus a illo consequatur iste dicta quaerat, minus minima iusto vitae magnam.
-
-      button.show-accordion Section 3
-      .desc-accordion
-        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam reiciendis magni in odit id necessitatibus veniam corporis tenetur, voluptatibus a illo consequatur iste dicta quaerat, minus minima iusto vitae magnam.
-    // End Accordion-2 
-
-    hr 
-
-
-    
-
-// End Angular & Js Section 
+// End Section Activity 

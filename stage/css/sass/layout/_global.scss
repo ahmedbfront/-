@@ -6,7 +6,6 @@
 @import url('https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap');
 // font-family: 'Yeon Sung', ;
 
-
 html,
 body {
   width: 100%;
@@ -43,7 +42,8 @@ h6 {
 
 
 .page-title {
-  margin: 40px 0 60px;
+  width: 80%;
+  margin: 40px auto 60px;
   text-align: center;
   text-transform: uppercase;
   h2 {
@@ -81,24 +81,11 @@ h6 {
 }
 
 
-.container-hover-activity{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  overflow: hidden;
-  hr {
-    width: 80%;
-    background-color: #555;
-    margin: 4rem;
-  }
-}
-
-
 @media (max-width: 576px)  {
 
   // Start Page Title 
   .page-title {
-    margin: 40px 0;
+    margin: 40px auto;
     h2 {
       font-size: 36px;
     }
@@ -159,3 +146,86 @@ h6 {
     }
   }
 }
+
+// 
+
+// Start Loding Site 
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999999999;
+  pointer-events: none;
+  backface-visibility: hidden;
+  transition: .4s linear;
+  &.loaded {
+    &:before {
+      transform: translateY(-101%);
+    }
+    &:after {
+      transform: translateY(101%);
+    }
+    .preloader-container {
+      opacity: 0;
+      visibility: hidden;
+      transition: 0s;
+    }
+  }
+  &:before {
+    top: 0;
+    bottom: 50%;
+  }
+  &:after {
+    top: 50%;
+    bottom: 0;
+  }
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: #111;
+    transition: .4s linear;
+  }
+  .preloader-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    text-align: center;
+    h1 {
+      margin: 0;
+      padding: 20px 0;
+      color: #fff;
+      font-size: 42px;
+      letter-spacing: 4px;
+    }
+    #progress-line-container {
+      width: 100vw;
+      background: #fff;
+      .progress-line {
+        background: #2196F3;
+        margin-top: 0;
+        margin-left: -100vw;
+        width: 100vw;
+        height: 5px;
+        transition: .5s;
+        animation: progess 2.5s linear infinite;
+      }
+    }
+  }
+}
+
+@keyframes progess {
+  0% {
+    margin-left: -100vw;
+  }
+
+  100% {
+    margin-left: 100vw;
+  }
+}
+// End Loding Site 

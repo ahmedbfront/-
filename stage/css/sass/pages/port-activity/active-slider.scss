@@ -1,10 +1,12 @@
+$primary: #2196F3;
+$flatRed: #c0392b;
+
 // Start Slider Using Css 
 .slider-by-css {
   position: relative;
-  width: 800px;
-  height: 400px;
   overflow: hidden;
-  .sidershow-by-css {
+  .slidershow-by-css {
+    position: relative;
     .slides-by-css {
       width: 500%;
       height: 100%;
@@ -72,12 +74,11 @@
 
 // Start Slider-2 
 .slider-2 {
-  width: 800px;
   .slider-container {
-    overflow: hidden;
-    margin: 10px auto;
-    height: 250px;
     position: relative;
+    width: 800px;
+    height: 300px;
+    overflow: hidden;
     .slide-number {
       position: absolute;
       top: 10px;
@@ -94,8 +95,8 @@
       opacity: 0;
       transition: opacity 1s;
       z-index: 1;
-      max-width: 100%;
-      height: auto;
+      width: 800px;
+      height: 100%;
       &.active {
         opacity: 1;
       }
@@ -149,3 +150,5 @@
   }
 }
 // Emd Slider-2 
+
+

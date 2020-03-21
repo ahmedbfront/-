@@ -7,23 +7,35 @@ html(lang="en")
     // Site Style 
     include pug/layout/styles
   body
-    // Navbar Home 
+  
+    //- Navbar Home 
     include pug/layout/navbar
-    
-    .home-site.active-page1
-      // Home Page 
+
+    min.home-site.active-page1
+
+      //- Home Page 
       include pug/layout/header
 
-      // About Page 
+      //- About Page 
       include pug/components/about
 
-      // Portfolio Page 
+      //- Portfolio Page 
       include pug/components/portfolio
       
-      // Contact Page 
+      //- Contact Page 
       include pug/components/contact
 
-    // Site Script  
+    // Start Loding Site 
+    .preloader
+      .preloader-container
+        h1=  '< Ahmed >'
+        #progress-line-container
+          .progress-line
+        h1=  '</ Badr >'
+    // End Loding Site 
+
+
+    // Site Script 
     include pug/layout/scripts
 
     

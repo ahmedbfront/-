@@ -1,4 +1,6 @@
+// Start Section Contact 
 
+// Import Iframe Google to Contact Form 
 <iframe name='hidden_iframe' id='hidden_iframe' style='display: none;'></iframe>
 
 section(class='contact pd-top-btm page page4')
@@ -41,7 +43,7 @@ section(class='contact pd-top-btm page page4')
 
       // Start Form Contact 
       .col-md-8
-        form(class='contact-form' id='form' action='https://docs.google.com/forms/u/3/d/e/1FAIpQLSeI6rbe1UwCmHRWSPipmQG16SXUV_r6NMWn05C8oQWaHi5KDw/formResponse' method='post' target='hidden_iframe' onsubmit='submitted=true')
+        form(class='contact-form' id='form' action='https://docs.google.com/forms/u/3/d/e/1FAIpQLSeI6rbe1UwCmHRWSPipmQG16SXUV_r6NMWn05C8oQWaHi5KDw/formResponse' method='post' target='hidden_iframe' )
           .row
             div(class='form-group col-md-6')
               i.icon.fa.fa-user
@@ -59,8 +61,10 @@ section(class='contact pd-top-btm page page4')
               span.formMsg Please write your message
 
             div(class='form-group')
-              button(class='btn btns' type="submit" value="Submit"): span
+              button(class='btn btns btn-submit' type="submit" value="Submit"  data-toggle="modal" data-target="#credit-pubg"): span
                 i.fa.fa-send
                 |  Send your Message
+              
       // End Form Contact 
-    
+
+// End Section Contact 

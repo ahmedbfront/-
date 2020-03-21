@@ -1,11 +1,10 @@
-// Start About Section 
+// Start Section About 
 .about {
   background-color: $black;
-
   // Start Personal Infos 
   .image-container {
     position: relative;
-    max-width: 450px;
+    max-width: 400px;
     z-index: 2;
     &:before {
       content: '';
@@ -43,7 +42,6 @@
     background-color: #555;
     margin: 5rem 0;
   }
-
   .title-skill {
     color: $primary;
     font-size: 45px;
@@ -84,7 +82,6 @@
         text-align: center;
         line-height: 30px;
         font-size: 12px;
-
         &:before {
           content: '';
           position: absolute;
@@ -106,6 +103,49 @@
   }
   // Start Skills 
 }
-// End About Section 
+// End Section About 
 
+@media (max-width: 576px) {
+  // Start Section About 
+  .about {
+    // Start Personal Infos 
+    .image-container {
+      margin-bottom: 40px;
+      &:before {
+        display: none;
+      }
+    }
+    ul {
+      li {
+        margin-bottom: 20px;
+      }
+    }
+    // End Personal Infos 
 
+    // Start Skills 
+    .title-skill {
+      margin-left: 3%;
+    }
+    // End Skills 
+
+  }
+  // End Section About 
+
+}
+
+@media(max-width:991.98px) {
+
+  // Start Section About 
+  .about {
+    // Start Personal Infos 
+    .image-container {
+      margin: 0 auto 60px;
+    }
+    // End Personal Infos 
+    hr {
+      margin: 3rem 0;
+    }
+  }
+  // End Section About 
+
+}

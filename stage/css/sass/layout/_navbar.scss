@@ -1,7 +1,7 @@
 // Start Navbar 
 .navbar {
-  background-color: $background;
-  box-shadow: 0 0 23px #00000061;
+  background-color: #333;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
   right: 0;
@@ -12,10 +12,11 @@
     color: $primary;
     font-size: 22px;
     font-family: 'Yeon Sung';
+    font-weight: bold;
+    text-shadow: 0 0.5rem 1rem $primary;
     &:hover,
     &:focus {
     color: $primary;
-
     }
   }
 
@@ -30,19 +31,11 @@
     border-bottom-left-radius: 100%;
     border-top-left-radius: 2px;
     overflow: hidden;
-    // clip-path: circle(24px at 32px 24px);
     clip-path: circle(23px at 270px 24px);
-    transition: all .4s;
-    &:hover {
-      transition-timing-function: ease-out;
-      transition-duration: .75s;
-      // clip-path: circle(390px at 150px 24px);
+    transition: all .6s;
+    &.clip {
       clip-path: circle(310px at 80px);
-
       a {
-        transition-delay: .2s;
-      transition-property: all;
-      transition-duration: .7s;
         &:nth-of-type(1) {
           margin-top: 33px;
           padding-left: 40px;
@@ -57,7 +50,7 @@
           padding-left: 200px;
           padding-bottom: 8px;
         }
-      }      
+      }
     }
     // Start Icone 
     .navicon {
@@ -66,13 +59,24 @@
       padding: 23px 20px;
       cursor: pointer;
       transform-origin: 32px 24px;
+      &.hav-icon {
+        span {
+          height: 0;
+          &:before {
+            transform: rotate(45deg);
+          }
+          &:after {
+            top: -7px;
+            transform: rotate(-45deg);
+          }
+        }
+      }
       span {
         position: relative;
         display: block;
         width: 20px;
         height: 2px;
         background: #fff;
-        
         &:before, &:after {
           content: '';
           display: block;
@@ -80,6 +84,7 @@
           height: 2px;
           background: #fff;
           position: absolute;
+          transition: all .4s;
         }
         &:before { 
           top: -7px; 
@@ -96,8 +101,9 @@
       padding: 0 20px;
       color: inherit;
       cursor: pointer;
-      user-select: none;
-      
+      transition-delay: .1s;
+      transition-property: all;
+      transition-duration: .6s;
       &:nth-of-type(1) {
         margin-top: 33px;
         padding-left: 55px;
@@ -112,8 +118,6 @@
         padding-left: 240px;
         padding-bottom: 8px;
       }
-     
-
       &:hover,
       &:active {
         background: $primary;
