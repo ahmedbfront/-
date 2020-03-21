@@ -9,7 +9,6 @@ $(".nav-port li").on("click", function() {
 
 });
 
-
 if ($(window).width() <= 992) {
   $('.portfolio .nav-port').css('display', 'none');
 }

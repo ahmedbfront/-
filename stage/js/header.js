@@ -4,8 +4,6 @@ if ($(".main-text").length) {
   });
 }
 
-
-
 $('.header .call-to-actions-home .section-about').on("click", function(e) {
   e.preventDefault();
 
@@ -17,7 +15,5 @@ $('.header .call-to-actions-home .section-port').on("click", function(e) {
   e.preventDefault();
 
   $('.navbar .section-port').addClass("active").siblings().removeClass("active");
-
-
 
 });

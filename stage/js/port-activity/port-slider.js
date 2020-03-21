@@ -60,87 +60,61 @@ for (var i=0; i < paginationBullets.length ; i++ ) {
 
 }
 
-
 // Trigger The Checker Function 
 theChecker();
 
 // Next Slide Function
 function nextSlide() {
-
   if (nextButton.classList.contains('disabled')) {
-
   } else {
     currentSlide++;
     theChecker();
   }
-
 }
 
 // Prev Slide Function
 function prevSlide() {
-
   if (prevButton.classList.contains('disabled')) {
-
   } else {
     currentSlide--;
     theChecker();
   }
 }
 
-
 // Create The Checker Function 
 function theChecker() {
-
   // Set The z Number
   slideNumberElement.textContent = 'Slide #' + (currentSlide) + ' of ' + (slideCount);
-
-
   // Remove All Active Classes
     removeAllActive();
-
   // Ste Active Class On Current Slide
   slideImg[currentSlide -1].classList.add('active');
-
   // Set Active Class on current Pagintion Item
   paginationElement.children[currentSlide -1].classList.add('active');
-
   // Check if Current Slide The First
   if (currentSlide == 1) {
-
     // Add Disabled Class on Previous Button
     prevButton.classList.add('disabled');
   } else {
-
     // Remove Disabled Class From Previous Button
     prevButton.classList.remove('disabled');
   }
-
-
   // Check if Current Slide The Last
   if (currentSlide == slideCount) {
-
     // Add Disabled Class on Next Button
     nextButton.classList.add('disabled');
   } else {
-
     // Remove Disabled Class From Next Button
     nextButton.classList.remove('disabled');
   }
-
 }
-
 // Remove All Active Classes From Images and Pagination Bullets
 function removeAllActive() {
-
   // Loop Through Images
   slideImg.forEach(function (img) {
-
     img.classList.remove('active');
-
   });
-
   paginationBullets.forEach(function (bullet) {
-
     bullet.classList.remove('active');
 
   });

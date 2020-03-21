@@ -17,8 +17,6 @@ $('#accordion-1').on('click', 'li>a', function (e) {
 });
 // End Accordion-1 
 
-
-
 // Start Accordion-2 
 var showAccordion = document.getElementsByClassName('show-accordion');
 

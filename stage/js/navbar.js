@@ -14,8 +14,6 @@ $(".navbar .nav-item").on("click", function(e) {
   $(this).addClass("active").siblings().removeClass("active");
 });
 
-
-
 $('.nav-phone .navicon').on('click', function () {
 
   $(this).toggleClass('hav-icon');
