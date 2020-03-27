@@ -1,61 +1,27 @@
 // Start Section Portfolio 
 .portfolio {
-  background-color: $black;
+  background-color: $background;
   // Portfolio Nav
-  .nav-port {
+  .port-nav {
     display: flex;
     justify-content: center;
     margin-bottom: 60px;
     li {
       position: relative;
-      color: #cecece85;
+      color: #fff;
       font-size: 20px;
       font-weight: bold;
       border-radius: 4px;
       margin: 0 20px;
       padding: 2px 12px;
       letter-spacing: 1px;
+      box-shadow: -1px -1px 3px rgba(255,255,255,0.1),
+       2px 2px 6px rgba(0,0,0,0.8);
       cursor: pointer;
-      transition: all .4s;
-      &:before, 
-      &:after {
-        position: absolute;
-        width: 0;
-        height: 0;
-        border-top-left-radius: 6px;
-        border-bottom-right-radius: 6px;
-        transition: all .4s;
-      }
-      &:before {
-        content: '';
-        top: 0;
-        left: 0;
-        border-top: 2px solid transparent;
-        border-left: 2px solid transparent;
-      }
-      &:after {
-        content: '';
-        position: absolute;
-        right: 0;
-        bottom: -4px;
-        border-bottom: 2px solid transparent;
-        border-right: 2px solid transparent;
-      }
-
-      &.active, &:hover {
-        color: $white;
-        &:after, &:before {
-          width: 20px;
-          height: 20px;
-        }
-        &:before {
-          border-top: 2px solid $primary;
-          border-left: 2px solid $primary;
-        }
-        &:after {
-          border-bottom: 2px solid $primary;
-          border-right: 2px solid $primary;
-        }
+      @include transition(.4s);
+      &.active{
+        color: $primary;
+        @include boxShadow;
       }
     }
   }
@@ -72,7 +38,7 @@
 
 @media (max-width: 420px) {
   // Portfolio Nav
-  .nav-port {
+  .port-nav {
     li {
       margin: 0 !important;
       &:before,

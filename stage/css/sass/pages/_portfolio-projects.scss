@@ -1,66 +1,68 @@
-// Start Section Project 
+// Start Section Project
 .port-projects {
   h2.t-section {
     display: none;
   }
-  // Portfolio Items 
+  // Portfolio Items
   .port-item {
-  position: relative;
-  height: 480px;
-  margin-bottom: 40px;
-  overflow: hidden;
-  &:hover {
+    position: relative;
+    height: 480px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    padding: 16px;
+    @include boxShadow;
+    &:hover {
+      .port-back-top {
+        top: 40px;
+        bottom: 50%;
+      }
+      .port-back-bottom {
+        top: 50%;
+        bottom: 40px;
+        .btn-live {
+          bottom: 100px;
+        }
+      }
+    }
+    .port-front {
+      height: 100%;
+      overflow: hidden;
+    }
+    .port-back-top,
+    .port-back-bottom {
+      position: absolute;
+      background-color: #000000bd;
+      left: 30px;
+      right: 30px;
+      @include transition(.5s);
+    }
     .port-back-top {
-      top: 20px;
-      bottom: 50%;
+      top: -100%;
+      bottom: 100%;
     }
     .port-back-bottom {
-      top: 50%;
-      bottom: 20px;
-      .btn-live {
-        bottom: 100px;
-      }
-    }
-  }
-  .port-front {
-    height: 100%;
-  }
-  .port-back-top,
-  .port-back-bottom {
-    position: absolute;
-    background-color: #000000bd;
-    left: 20px;
-    right: 20px;
-    transition: all 0.5s;
-  }
-  .port-back-top {
-    top: -100%;
-    bottom: 100%;
-  }
-  .port-back-bottom {
-    top: 100%;
-    bottom: -100%;
-    padding: 30px;
-    display: flex;
-    justify-content: center;
-    h5 {
-      text-align: center;
-      margin: 60px 0;
-    }
-    span {
-      padding: 10px;
-    }
-    .btn-live {
-      position: absolute;
+      top: 100%;
       bottom: -100%;
-      transition: all 0.7s;
-      img {
-        margin-top: -2px;
-        margin-right: 8px;
+      display: flex;
+      justify-content: center;
+      h5 {
+        text-align: center;
+        margin: 60px 0;
+      }
+      span {
+        padding: 10px;
+      }
+      .btn-live {
+        position: absolute;
+        bottom: -100%;
+        @include transition(.7s);
+        img {
+          margin-top: -2px;
+          margin-right: 8px;
+        }
       }
     }
   }
-  }
-  // Portfolio Items 
+  // Portfolio Items
 }
-// End Section Project 
+// End Section Project

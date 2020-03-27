@@ -17,7 +17,7 @@ $flatRed: #c0392b;
       }
       .slide-by-css {
         width: 20%;
-        transition: all .4s;
+        @include transition(.4s);
         position: relative;
         &:after {
           content: '';
@@ -45,7 +45,7 @@ $flatRed: #c0392b;
           border: 2px solid #fff;
           border-radius: 100%;
           margin: 6px;
-          transition: all .4s;
+          @include transition(.4s);
           cursor: pointer;
           &:hover {
             background-color: #fff;
@@ -92,11 +92,11 @@ $flatRed: #c0392b;
     }
     img {
       position: absolute;
-      opacity: 0;
-      transition: opacity 1s;
-      z-index: 1;
       width: 800px;
       height: 100%;
+      opacity: 0;
+      z-index: 1;
+      @include transition(1s);
       &.active {
         opacity: 1;
       }

@@ -6,33 +6,7 @@
 @import url('https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap');
 // font-family: 'Yeon Sung', ;
 
-html,
-body {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  font-family: 'Open Sans', sans-serif;
-  background-color: $background;
-}
 
-
-a,
-a:hover,
-a:active,
-a:focus {
-  text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Poppins', sans-serif;
-  text-transform: uppercase;
-
-}
 
 
 .pd-top-btm {
@@ -105,7 +79,7 @@ h6 {
   left: 0;
   width: 100%;
   height: 100%;
-  transition: transform 1.5s;
+  @include transition(1.5s);
   perspective: 3000;
   transform-style: preserve-3d;
   .page {
@@ -114,7 +88,7 @@ h6 {
     height: 100%;
     transform: rotateX(180deg) scale(0.3);
     backface-visibility: hidden;
-    transition: transform 1s ease-in-out;
+    @include transition(1s ease-in-out);
     will-change: transform;
     overflow: auto;
   }
@@ -144,84 +118,3 @@ h6 {
     }
   }
 }
-
-// Start Loding Site 
-.preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 9999999999;
-  pointer-events: none;
-  backface-visibility: hidden;
-  transition: .4s linear;
-  &.loaded {
-    &:before {
-      transform: translateY(-101%);
-    }
-    &:after {
-      transform: translateY(101%);
-    }
-    .preloader-container {
-      opacity: 0;
-      visibility: hidden;
-      transition: 0s;
-    }
-  }
-  &:before {
-    top: 0;
-    bottom: 50%;
-  }
-  &:after {
-    top: 50%;
-    bottom: 0;
-  }
-  &:before,
-  &:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    background-color: #111;
-    transition: .4s linear;
-  }
-  .preloader-container {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-    text-align: center;
-    h1 {
-      margin: 0;
-      padding: 20px 0;
-      color: #fff;
-      font-size: 42px;
-      letter-spacing: 4px;
-    }
-    #progress-line-container {
-      width: 100vw;
-      background: #fff;
-      .progress-line {
-        background: #2196F3;
-        margin-top: 0;
-        margin-left: -100vw;
-        width: 100vw;
-        height: 5px;
-        transition: .5s;
-        animation: progess 2.5s linear infinite;
-      }
-    }
-  }
-}
-
-@keyframes progess {
-  0% {
-    margin-left: -100vw;
-  }
-
-  100% {
-    margin-left: 100vw;
-  }
-}
-// End Loding Site 

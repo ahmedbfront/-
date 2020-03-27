@@ -1,9 +1,9 @@
 .btns {
   position: relative;
   background-color: $primary;
+  display: inline-block;
   border-radius: 24px;
   line-height: 50px;
-  font-size: 15px;
   text-transform: uppercase;
   color: $white;
   padding: 0 30px;
@@ -13,6 +13,7 @@
   font-size: 16px;
   font-weight: 500;
   font-family: $fontText;
+  @include boxShadow;
   span {
     position: relative;
     z-index: 99;
@@ -27,9 +28,10 @@
     left: -25%;
     width: 0%;
     height: 102%;
-    background-color: #555;
+    background-color: $background;
     transform: skew(-30deg);
-    transition: all .5s;
+    @include transition(.5s);
+    @include boxShadow;
   }
   &:hover  {
     &:before {

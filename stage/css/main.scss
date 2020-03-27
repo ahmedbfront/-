@@ -1,4 +1,7 @@
 @import 'sass/variables/colors';
+@import 'sass/helpers/mixin';
+
+@import 'sass/layout/reset';
 @import 'sass/layout/global';
 
 @import 'sass/helpers/buttons';
@@ -21,6 +24,8 @@
 // Start Section Activity 
 @import 'sass/pages/port-activity/active-slider.scss';
 @import 'sass/pages/port-activity/active-accordion.scss';
+@import 'sass/pages/port-activity/activity-checkbox';
 // End Pages Portfolio 
 
 @import 'sass/pages/contact';
+@import 'sass/helpers/lodingsite';

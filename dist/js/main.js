@@ -94,9 +94,6 @@ $(window).load(function () {
 
 
 
-
- 
-
 // Toogle Show Navbar 
 $('.navbar-collapse .collapse-toggle').on('click', function () {
 
@@ -130,7 +127,7 @@ $('.nav-phone a').on('click', function (e) {
 
 });
 
-$(".nav-port li").on("click", function() {
+$(".port-nav li").on("click", function() {
 
   $(this).addClass("active").siblings().removeClass("active");
 
@@ -141,7 +138,7 @@ $(".nav-port li").on("click", function() {
 });
 
 if ($(window).width() <= 992) {
-  $('.portfolio .nav-port').css('display', 'none');
+  $('.portfolio .port-nav').css('display', 'none');
 }
 
 

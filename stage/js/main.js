@@ -30,7 +30,3 @@ $(window).load(function () {
 });
 // End Loding Site 
 
-
-
-
- 

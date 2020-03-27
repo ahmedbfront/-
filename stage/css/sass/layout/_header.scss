@@ -7,7 +7,7 @@
   z-index: 99;
   &:after {
     content: '';
-    background-color: rgba(0,0,0,.85);
+    background-color: #253143f7;
     position: absolute;
     top: 0;
     left: 0;
@@ -43,8 +43,11 @@
         margin: 18px 0 10px;
         text-transform: inherit;
         span {
-        color: $textColor;
+        color: $primary;
         padding: 0;
+        &:after {
+          background-color: transparent;
+        }
         }
       }
       p {
@@ -61,8 +64,6 @@
         }
         .btn-port {
           background-color: transparent;
-          color: $textColor;
-          border: 1px solid $primary;
           &:hover {
             &:before {
               background: $primary;

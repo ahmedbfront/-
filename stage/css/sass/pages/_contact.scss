@@ -1,6 +1,6 @@
 // Start Section Contact 
 .contact {
-  background-color: $black;
+  background-color: $background;
 
   // Start Contact Info 
   .contact-info {
@@ -49,14 +49,11 @@
           height: 35px;
           line-height: 35px;
           color: $primary;
-          border: 1px solid $primary;
           border-radius: 50%;
           text-align: center;
           display: block;
-          transition: 0.4s;
-          i {
-
-          }
+          @include transition(.4s);
+          @include boxShadow;
         }
       }
     }
@@ -65,7 +62,6 @@
 
   // Start Form Contact 
   .contact-form {
-
     .form-group {
       margin-bottom: 30px;
       .icon {
@@ -77,13 +73,14 @@
         color: #eee;
       }
       .form-control {
-        background: #333;
-        border: 1px solid #444;
+        background: $background;
+        border: none;
         color: #fff;
         height: 50px;
         border-radius: 30px;
         padding-left: 55px;
         margin-bottom: 6px;
+        @include boxShadow;
       }
       .formMsg {
         display: none;

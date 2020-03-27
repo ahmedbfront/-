@@ -20,12 +20,11 @@ $primary: #2196F3;
           height: 55px;
           line-height: 55px;
           text-align: center;
-          transition: all .4s;
-
+          @include transition(.4s);
           i {
             color: $primary;
             font-size: 30px;
-            transition: all .4s;
+            @include transition(.4s);
           }
           &.active {
             background-color: $primary;
@@ -48,7 +47,7 @@ $primary: #2196F3;
             font-size: 24px;
             border-bottom: 2px solid #fff;
             padding-bottom: 15px;
-            transition: all .4s;
+            @include transition(.4s);
           }
           p {
             color: #fff;  
@@ -73,7 +72,7 @@ $primary: #2196F3;
     border-bottom: 1px solid #ddd;
     outline: 0;
     cursor: pointer;
-    transition: .3s;
+    @include transition(.3s);
     &:after {
       content: '\002b';
       float: right;
@@ -91,7 +90,7 @@ $primary: #2196F3;
   .desc-accordion {
     max-height: 0;
     overflow: hidden;
-    transition: .4s;
+    @include transition(.4s);
     p {
       background: #fff;
       padding: 20px 40px;

@@ -1,4 +1,4 @@
-- var pageTitle = 'Ahmed Badr';
+- var pageTitle = ' Ahmed Badr ';
 <!DOCTYPE html>
 html(lang="en")
   head
@@ -11,7 +11,7 @@ html(lang="en")
     //- Navbar Home 
     include pug/layout/navbar
 
-    min.home-site.active-page1
+    .home-site.active-page1
 
       //- Home Page 
       include pug/layout/header
@@ -28,14 +28,13 @@ html(lang="en")
     // Start Loding Site 
     .preloader
       .preloader-container
-        h1=  '< Ahmed >'
+        h2=  '< Ahmed >'
         #progress-line-container
           .progress-line
-        h1=  '</ Badr >'
+        h2=  '</ Badr >'
     // End Loding Site 
 
 
     // Site Script 
     include pug/layout/scripts
-
     

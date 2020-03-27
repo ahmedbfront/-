@@ -1,6 +1,3 @@
-$primary: #2196F3;
-
-$primaryHover: #fb397d;
 
 // Start Button 
 .page-button {
@@ -14,7 +11,7 @@ $primaryHover: #fb397d;
     padding: 14px 30px;
     margin: 12px;
     transform: perspective(1px) translateZ(0);
-    transition: all .4s;
+    @include transition(.4s);
     overflow: hidden;
     &:before {
       content: '';
@@ -24,7 +21,7 @@ $primaryHover: #fb397d;
       right: 0;
       bottom: 0;
       background-color: $primaryHover;
-      transition: all .4s;
+      @include transition(.4s);
       z-index: -1;
     }
     // Start Button 1 
@@ -222,17 +219,17 @@ $primaryHover: #fb397d;
       }
       &:before {
         height: 2px;
-        background:$primary;
+        background: $primary;
       }
       &:after {
         content: '';
         height: 2px;
-        background:$primary;
-        transition:all 0.4s;
+        background: $primary;
         position: absolute;
         left: 0;
         right: 0;
         bottom: 0;
+        @include transition(.4s);
       }
     }
   }

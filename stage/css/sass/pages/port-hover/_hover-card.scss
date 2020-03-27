@@ -1,4 +1,3 @@
-$primary: #2196F3;
 
 // Start Card-1 
 .card-body-1 {
@@ -20,7 +19,7 @@ $primary: #2196F3;
     position: absolute;
     backface-visibility: hidden;
     transform: perspective(600px)  rotateY(0deg);
-    transition: all .5s;
+    @include transition(.5s);
     img {
       height: 100%;
     }
@@ -33,7 +32,7 @@ $primary: #2196F3;
     backface-visibility: hidden;
     background-color: $primary;
     transform: perspective(600px)  rotateY(180deg);
-    transition: all .5s;
+    @include transition(.5s);
     .single-price-plan {
 
       .package-plan {
@@ -73,10 +72,10 @@ $primary: #2196F3;
           padding: 16px;
           margin: 10px;
           transform: perspective(1px) translateZ(0);
-          transition: all .4s;
           overflow: hidden;
           border: 0;
           border-radius: 30px;
+          @include transition(.4s);
           &:before {
             content: '';
             position: absolute;
@@ -85,10 +84,10 @@ $primary: #2196F3;
             right: 0;
             bottom: 0;
             background-color: #fb397d;
-            transition: all .4s;
             z-index: -1;
             transform: scaleY(0);
             transform-origin: 50% 0;
+            @include transition(.4s);
           }
           &:hover {
             color: #fff;
@@ -127,12 +126,12 @@ $primary: #2196F3;
   }
   .detailss {
     .details-left, .details-right {
+      background: $primary;
       position: absolute;
       top: 0;
       width: 50%;
       height: 100%;
-      background: $primary;
-      transition: .5s;
+      @include transition(.5s);
       .content-left, .content-right {
         padding-top: 100px;
         h2 {
@@ -167,10 +166,10 @@ $primary: #2196F3;
               display: block;
               text-align: center;
               line-height: 35px;
-              transition: all .4s;
+              @include transition(.4s);
               i {
                 color: $primary;
-                transition: all .4s;
+                @include transition(.4s);
               }
             }
           }
