@@ -1,5 +1,6 @@
 var gulp    = require('gulp'),
     pug     = require('gulp-pug'),
+    htmlmin = require('gulp-html-minifier2'),
     sass    = require('gulp-sass'),
     prefix  = require('gulp-autoprefixer'),
     sourcemaps = require('gulp-sourcemaps'), // لعمل خريطة للكود
@@ -15,6 +16,8 @@ gulp.task('html', function(done) {
   done();
   return gulp.src('stage/html/**/*.pug')
     .pipe(pug({pretty: true}))
+    .pipe(htmlmin({collapseWhitespace: true}))
+    // .pipe(htmlmin({collapseWhitespace: true, ignorePath: 'stage/html/pug/layout' }))
     .pipe(gulp.dest('dist'))
     .pipe(notify('Html In Done'))
     .pipe(livereload());

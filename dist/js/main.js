@@ -93,7 +93,6 @@ $(window).load(function () {
 // End Loding Site 
 
 
-
 // Toogle Show Navbar 
 $('.navbar-collapse .collapse-toggle').on('click', function () {
 
