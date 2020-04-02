@@ -1,13 +1,11 @@
-// Start Home Page 
+// Start Home Page
 .header {
-  background-image: url('../img/header.jpg');
+  background-image: url("http://www.mediafire.com/convkey/9dbc/p4b9qwxrgtz7qgezg.jpg");
   background-size: cover;
-  position: relative;
-  height: 100vh;
   z-index: 99;
   &:after {
-    content: '';
-    background-color: #253143f7;
+    content: "";
+    background-color: #253143fa;
     position: absolute;
     top: 0;
     left: 0;
@@ -15,7 +13,7 @@
     bottom: 0;
     z-index: -1;
   }
-  // Start 
+  // Start
   .main-text-container {
     position: absolute;
     top: 50%;
@@ -32,7 +30,7 @@
     }
     .main-text {
       width: 540px;
-      margin-left:80px;
+      margin-left: 80px;
       color: $white;
       h6 {
         color: $offWhite;
@@ -43,11 +41,11 @@
         margin: 18px 0 10px;
         text-transform: inherit;
         span {
-        color: $primary;
-        padding: 0;
-        &:after {
-          background-color: transparent;
-        }
+          color: $primary;
+          padding: 0;
+          &:after {
+            background-color: transparent;
+          }
         }
       }
       p {
@@ -58,7 +56,7 @@
       }
       .call-to-actions-home {
         a {
-          &:hover  {
+          &:hover {
             color: $white;
           }
         }
@@ -74,7 +72,7 @@
     }
   }
 }
-// End Home Page 
+// End Home Page
 
 @media (max-width: 576px) {
   .main-text-container {
@@ -89,11 +87,10 @@
   }
 }
 
-
 @media (min-width: 576px) {
-  // Start Home Page 
+  // Start Home Page
   .header {
-    // Start 
+    // Start
     .main-text-container {
       .main-text {
         .call-to-actions-home {
@@ -108,15 +105,13 @@
       }
     }
   }
-  // End Home Page 
+  // End Home Page
 }
 
-
 @media (min-width: 576px) and (max-width: 767px) {
-
-  // Start Home Page 
+  // Start Home Page
   .header {
-    // Start 
+    // Start
     .main-text-container {
       width: 80% !important;
       .main-text {
@@ -142,17 +137,13 @@
       }
     }
   }
-  // End Home Page 
-
+  // End Home Page
 }
 
-
-
 @media (max-width: 767.98px) {
-
-  // Start Home Page 
+  // Start Home Page
   .header {
-    // Start 
+    // Start
     .main-text-container {
       width: 92%;
       img {
@@ -181,15 +172,13 @@
       }
     }
   }
-  // End Home Page 
-
+  // End Home Page
 }
 
-@media(min-width: 768px) and (max-width: 991.98px) {
-
-  // Start Home Page 
+@media (min-width: 768px) and (max-width: 991.98px) {
+  // Start Home Page
   .header {
-    // Start 
+    // Start
     .main-text-container {
       img {
         max-width: 250px;
@@ -218,5 +207,5 @@
       }
     }
   }
-  // End Home Page 
+  // End Home Page
 }

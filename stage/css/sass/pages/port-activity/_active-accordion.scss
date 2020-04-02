@@ -1,6 +1,6 @@
-$primary: #2196F3;
+$primary: #2196f3;
 
-// Start Accordion-1 
+// Start Accordion-1
 .accordion_1 {
   width: 800px;
   height: 230px;
@@ -20,11 +20,11 @@ $primary: #2196F3;
           height: 55px;
           line-height: 55px;
           text-align: center;
-          @include transition(.4s);
+          @include transition(0.4s);
           i {
             color: $primary;
             font-size: 30px;
-            @include transition(.4s);
+            @include transition(0.4s);
           }
           &.active {
             background-color: $primary;
@@ -47,50 +47,47 @@ $primary: #2196F3;
             font-size: 24px;
             border-bottom: 2px solid #fff;
             padding-bottom: 15px;
-            @include transition(.4s);
+            @include transition(0.4s);
           }
           p {
-            color: #fff;  
+            color: #fff;
           }
         }
       }
     }
   }
 }
-// End Accordion-1 
+// End Accordion-1
 
-
-// Start Accordion-2 
+// Start Accordion-2
 .accordion-2 {
   .show-accordion {
     width: 100%;
-    background: #eee;
+    background: $primary;
     font-size: 16px;
     padding: 20px 40px;
     text-align: left;
     border: none;
-    border-bottom: 1px solid #ddd;
+    // border-bottom: 1px solid #ddd;
+    color: #fff;
     outline: 0;
     cursor: pointer;
-    @include transition(.3s);
+    @include transition(0.3s);
     &:after {
-      content: '\002b';
+      content: "\002b";
       float: right;
       font-weight: bold;
-    }
-    &:hover {
-      background: #ccc;
     }
   }
   .active {
     &:after {
-      content: '\2212';
+      content: "\2212";
     }
   }
   .desc-accordion {
     max-height: 0;
     overflow: hidden;
-    @include transition(.4s);
+    @include transition(0.4s);
     p {
       background: #fff;
       padding: 20px 40px;
@@ -98,4 +95,4 @@ $primary: #2196F3;
     }
   }
 }
-// End Accordion-2 
+// End Accordion-2
