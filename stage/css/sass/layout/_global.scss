@@ -1,19 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Poppins:400,500,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Poppins:400,500,700&display=swap");
 
-@import url('https://fonts.googleapis.com/css?family=Sriracha&display=swap'); 
+@import url("https://fonts.googleapis.com/css?family=Sriracha&display=swap");
 //font-family: 'Sriracha', cursive;
 
-@import url('https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap");
 // font-family: 'Yeon Sung', ;
-
-
-
 
 .pd-top-btm {
   padding-top: 80px;
   padding-bottom: 60px;
 }
-
 
 .page-title {
   width: 80%;
@@ -34,7 +30,7 @@
     display: inline-block;
     color: $pargColor;
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       top: 11px;
       left: -40px;
@@ -43,7 +39,7 @@
       height: 2px;
     }
     &:after {
-      content: '';
+      content: "";
       position: absolute;
       top: 11px;
       right: -40px;
@@ -54,10 +50,8 @@
   }
 }
 
-
-@media (max-width: 576px)  {
-
-  // Start Title Page 
+@media (max-width: 576px) {
+  // Start Title Page
   .page-title {
     margin: 40px auto;
     h2 {
@@ -65,12 +59,13 @@
     }
     p {
       font-size: 14px;
-      &:before, &:after {
+      &:before,
+      &:after {
         display: none;
       }
     }
   }
-  // End Title Page 
+  // End Title Page
 }
 
 .home-site {
