@@ -6,7 +6,7 @@
   // Portfolio Items
   .port-item {
     position: relative;
-    height: 480px;
+    height: 450px;
     margin-bottom: 40px;
     overflow: hidden;
     padding: 16px;
@@ -34,7 +34,7 @@
       background-color: #000000bd;
       left: 30px;
       right: 30px;
-      @include transition(.5s);
+      @include transition(0.5s);
     }
     .port-back-top {
       top: -100%;
@@ -55,7 +55,7 @@
       .btn-live {
         position: absolute;
         bottom: -100%;
-        @include transition(.7s);
+        @include transition(0.7s);
         img {
           margin-top: -2px;
           margin-right: 8px;

@@ -1,13 +1,13 @@
-// Start Section About 
+// Start Section About
 .about {
   background-color: $background;
-  // Start Personal Infos 
+  // Start Personal Infos
   .image-container {
     position: relative;
     max-width: 400px;
     z-index: 2;
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
@@ -37,11 +37,11 @@
       }
     }
   }
-  // Download CV 
+  // Download CV
   .cv {
     margin-top: 16px;
   }
-  // End Personal Infos 
+  // End Personal Infos
   hr {
     background-color: #555;
     margin: 5rem 0;
@@ -52,7 +52,7 @@
     margin-bottom: 40px;
   }
 
-  // Start Skills 
+  // Start Skills
   .skill {
     width: 90%;
     margin: auto;
@@ -87,7 +87,7 @@
         line-height: 30px;
         font-size: 12px;
         &:before {
-          content: '';
+          content: "";
           position: absolute;
           width: 10px;
           height: 10px;
@@ -105,14 +105,14 @@
       }
     }
   }
-  // Start Skills 
+  // Start Skills
 }
-// End Section About 
+// End Section About
 
 @media (max-width: 576px) {
-  // Start Section About 
+  // Start Section About
   .about {
-    // Start Personal Infos 
+    // Start Personal Infos
     .image-container {
       margin-bottom: 40px;
       &:before {
@@ -124,32 +124,28 @@
         margin-bottom: 20px;
       }
     }
-    // End Personal Infos 
+    // End Personal Infos
 
-    // Start Skills 
+    // Start Skills
     .title-skill {
-      margin-left: 3%;
+      padding-left: 6%;
     }
-    // End Skills 
-
+    // End Skills
   }
-  // End Section About 
-
+  // End Section About
 }
 
-@media(max-width:991.98px) {
-
-  // Start Section About 
+@media (max-width: 991.98px) {
+  // Start Section About
   .about {
-    // Start Personal Infos 
+    // Start Personal Infos
     .image-container {
       margin: 0 auto 60px;
     }
-    // End Personal Infos 
+    // End Personal Infos
     hr {
       margin: 3rem 0;
     }
   }
-  // End Section About 
-
+  // End Section About
 }

@@ -1,4 +1,4 @@
-// Start Navbar 
+// Start Navbar
 .navbar {
   background-color: $background;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.14);
@@ -11,14 +11,14 @@
   .navbar-brand {
     color: $primary;
     font-size: 22px;
-    font-family: 'Yeon Sung';
+    font-family: "Yeon Sung";
     font-weight: bold;
     &:hover,
     &:focus {
-    color: $primary;
+      color: $primary;
     }
   }
-  // Start Navbar Phone 
+  // Start Navbar Phone
   .nav-phone {
     background: $background;
     position: absolute;
@@ -30,13 +30,13 @@
     border-top-left-radius: 2px;
     overflow: hidden;
     clip-path: circle(23px at 270px 24px);
-    @include transition(.6s);
+    @include transition(0.6s);
     @include boxShadow;
     &.clip {
       clip-path: circle(310px at 80px);
       a {
         &:nth-of-type(1) {
-          margin-top: 33px;
+          margin-top: 50px;
           padding-left: 40px;
         }
         &:nth-of-type(2) {
@@ -51,7 +51,7 @@
         }
       }
     }
-    // Start Icone 
+    // Start Icone
     .navicon {
       position: absolute;
       right: 0;
@@ -76,35 +76,36 @@
         width: 20px;
         height: 2px;
         background: #fff;
-        &:before, &:after {
-          content: '';
+        &:before,
+        &:after {
+          content: "";
           display: block;
           width: 20px;
           height: 2px;
           background: #fff;
           position: absolute;
-          @include transition(.4s);
+          @include transition(0.4s);
         }
-        &:before { 
-          top: -7px; 
+        &:before {
+          top: -7px;
         }
-        &:after { 
-          top: 7px; 
+        &:after {
+          top: 7px;
         }
       }
     }
-    // Start Link 
+    // Start Link
     a {
       display: block;
       line-height: 50px;
       padding: 0 20px;
       color: inherit;
       cursor: pointer;
-      transition-delay: .1s;
+      transition-delay: 0.1s;
       transition-property: all;
-      transition-duration: .6s;
+      transition-duration: 0.6s;
       &:nth-of-type(1) {
-        margin-top: 33px;
+        margin-top: 55px;
         padding-left: 55px;
       }
       &:nth-of-type(2) {
@@ -121,13 +122,13 @@
       &:active {
         background: $primary;
         transition-delay: 0s;
-        @include transition(.4s);
+        @include transition(0.4s);
       }
     }
   }
-  // End Navbar Phone 
+  // End Navbar Phone
 
-  // Start Link Navbar Home 
+  // Start Link Navbar Home
   ul.navbar-nav {
     .nav-item {
       position: relative;
@@ -135,19 +136,20 @@
       .nav-link {
         color: $white;
         padding: 0;
-        transition: all .4s;
+        transition: all 0.4s;
       }
       &:after {
-        content: '';
+        content: "";
         position: absolute;
         left: 50px;
         right: 50px;
         bottom: -18px;
         background-color: $primary;
         height: 4px;
-        @include transition(.4s);
+        @include transition(0.4s);
       }
-      &:hover, &.active {
+      &:hover,
+      &.active {
         .nav-link {
           color: $primary;
         }
@@ -159,21 +161,21 @@
     }
   }
 }
-// End Navbar 
+// End Navbar
 
 @media (min-width: 992px) {
-  // Start Navbar Phone 
+  // Start Navbar Phone
   .nav-phone {
     display: none;
   }
 }
 
 @media (max-width: 991.98px) {
-  // Start Navbar Home 
+  // Start Navbar Home
   .navbar {
     overflow: visible;
     .navbar-collapse {
       display: none;
-     }
+    }
   }
 }
