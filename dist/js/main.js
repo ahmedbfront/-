@@ -60,7 +60,6 @@ $('.header .call-to-actions-home .section-port').on("click", function(e) {
 
 });
 
-/*global $, alert, console */
 
 // Start Loding Site
 $(window).load(function () {
@@ -69,25 +68,17 @@ $(window).load(function () {
 // End Loding Site
 
  
-
-
+// Show - Hide the Requested Page
 $('.nav-btn').on('click' , function () {
   $('.home-site > section.active').removeClass('active');
-  var $id = $(this).attr('href');
-  $('.home-site').children($id).addClass('active');
+  var attrSec = $(this).attr('href');
+  $('.home-site').children(attrSec).addClass('active');
 });
-
-
-
 
 // Add Class Active On Navbar Home 
 $(".navbar .nav-item").on("click", function(e) {
   e.preventDefault();
   $(this).addClass("active").siblings().removeClass("active");
-});
-$('.nav-phone .navicon').on('click', function () {
-  $(this).toggleClass('hav-icon');
-  $('.nav-phone').toggleClass('clip');
 });
 
 // Add Class Active On Navbar Phone 
@@ -96,20 +87,24 @@ $('.nav-phone a').on('click', function (e) {
   $('.nav-phone').removeClass('clip');
   $('.nav-phone .navicon').removeClass('hav-icon');
 });
-
+$('.nav-phone .navicon').on('click', function () {
+  $(this).toggleClass('hav-icon');
+  $('.nav-phone').toggleClass('clip');
+});
 
 $(".port-nav li").on("click", function() {
 
   $(this).addClass("active").siblings().removeClass("active");
 
   $('.show-portfolio > div').hide();
-  
+  console.log($($(this).data('section')));
   $($(this).data('section')).fadeIn(300);
 
 });
 
 if ($(window).width() <= 992) {
-  $('.portfolio .port-nav').css('display', 'none');
+  $('.portfolio .port-nav').remove();
+  $('.section-hover, .section-activity').remove();
 }
 
 

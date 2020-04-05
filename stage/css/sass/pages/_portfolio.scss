@@ -30,11 +30,9 @@
       }
     }
   }
-  .show-portfolio {
-    section {
-      &:not(:first-child) {
-        display: none;
-      }
+  .show-portfolio > div {
+    &:not(:first-child) {
+      display: none;
     }
   }
 }
