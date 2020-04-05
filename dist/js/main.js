@@ -61,75 +61,48 @@ $('.header .call-to-actions-home .section-port').on("click", function(e) {
 });
 
 /*global $, alert, console */
-$(function () {
-  "use strict";
-
-  var $wrap = $(".home-site"),
-    scrolling = false;
-
-  /* NAV CIRCLE DIRECT PAGE BTN */
-  $(document).on("click", ".nav-btn", function () {
-    if (!scrolling) {
-      var target = $(this).attr("data-target");
-      if (Modernizr.csstransforms) {
-        $wrap.removeClass(function (index, css) {
-          return (css.match(/(^|\s)active-page\S+/g) || []).join(" ");
-        });
-        $wrap.addClass("active-page" + target);
-      } else {
-        $wrap.animate({ top: "-" + (target - 1) * 100 + "%" }, 1000);
-      }
-    }
-  });
-
-});
 
 // Start Loding Site
 $(window).load(function () {
-  $(".preloader").addClass("loaded");
+  $('.preloader').addClass('loaded');
 });
 // End Loding Site
 
+ 
 
 
-// Toogle Show Navbar 
-$('.navbar-collapse .collapse-toggle').on('click', function () {
-
-  if ($(window).width() < 992) {
-  $('.navbar-collapse').collapse('toggle');
-  }
-
+$('.nav-btn').on('click' , function () {
+  $('.home-site > section.active').removeClass('active');
+  var $id = $(this).attr('href');
+  $('.home-site').children($id).addClass('active');
 });
+
+
+
 
 // Add Class Active On Navbar Home 
 $(".navbar .nav-item").on("click", function(e) {
   e.preventDefault();
   $(this).addClass("active").siblings().removeClass("active");
 });
-
 $('.nav-phone .navicon').on('click', function () {
-
   $(this).toggleClass('hav-icon');
-
   $('.nav-phone').toggleClass('clip');
-
 });
 
-
+// Add Class Active On Navbar Phone 
 $('.nav-phone a').on('click', function (e) {
   e.preventDefault();
-
   $('.nav-phone').removeClass('clip');
-
   $('.nav-phone .navicon').removeClass('hav-icon');
-
 });
+
 
 $(".port-nav li").on("click", function() {
 
   $(this).addClass("active").siblings().removeClass("active");
 
-  $('.show-portfolio > section').hide();
+  $('.show-portfolio > div').hide();
   
   $($(this).data('section')).fadeIn(300);
 
