@@ -1,8 +1,8 @@
-// Start Section Contact 
+// Start Section Contact
 .contact {
   background-color: $background;
 
-  // Start Contact Info 
+  // Start Contact Info
   .contact-info {
     margin-bottom: 40px;
     ul {
@@ -26,9 +26,9 @@
       }
     }
   }
-  // End Contact Info 
+  // End Contact Info
 
-  // Start Social Media 
+  // Start Social Media
   .social-media {
     h6 {
       color: $pargColor;
@@ -36,8 +36,6 @@
     }
     .social {
       display: inline-block;
-      box-shadow: -1px -1px 3px rgba(255,255,255,0.1),
-      2px 2px 6px rgba(0,0,0,0.8);
       padding: 0;
       margin-bottom: 60px;
       li {
@@ -57,15 +55,15 @@
           border-radius: 50%;
           text-align: center;
           display: block;
-          @include transition(.4s);
+          @include transition(0.4s);
           @include boxShadow;
         }
       }
     }
   }
-  // Start Social Media 
+  // Start Social Media
 
-  // Start Form Contact 
+  // Start Form Contact
   .contact-form {
     .form-group {
       margin-bottom: 30px;
@@ -74,7 +72,7 @@
         top: 16px;
         left: 40px;
         font-size: 16px;
-        opacity: .3;
+        opacity: 0.3;
         color: #eee;
       }
       .form-control {
@@ -93,6 +91,7 @@
         margin-left: 20px;
       }
       textarea {
+        padding-top: 12px;
         height: 150px !important;
       }
       .btn-submit {
@@ -100,7 +99,7 @@
       }
     }
   }
-  // End Form Contact 
+  // End Form Contact
 }
 
-// Start Section Contact 
+// Start Section Contact

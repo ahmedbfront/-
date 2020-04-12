@@ -1,4 +1,4 @@
-// Start Section Portfolio 
+// Start Section Portfolio
 .portfolio {
   background-color: $background;
   // Portfolio Nav
@@ -7,8 +7,8 @@
     left: 50%;
     display: inline-block;
     transform: translateX(-50%);
-    box-shadow: -1px -1px 3px rgba(255,255,255,0.1),
-    2px 2px 6px rgba(0,0,0,0.8);
+    box-shadow: inset -1px -1px 3px rgba(255, 255, 255, 0.1),
+      inset 2px 2px 6px rgba(0, 0, 0, 0.8);
     padding: 8px;
     margin-bottom: 60px;
     li {
@@ -20,13 +20,12 @@
       margin: 8px 22px;
       padding: 2px 12px;
       letter-spacing: 1px;
-      box-shadow: -1px -1px 3px rgba(255,255,255,0.1),
-       2px 2px 6px rgba(0,0,0,0.8);
       cursor: pointer;
-      @include transition(.4s);
-      &.active{
+      @include transition(0.4s);
+      &.active {
         color: $primary;
-        @include boxShadow;
+        box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1),
+          2px 2px 6px rgba(0, 0, 0, 0.8);
       }
     }
   }
@@ -36,8 +35,7 @@
     }
   }
 }
-// End Section Portfolio 
-
+// End Section Portfolio
 
 @media (max-width: 420px) {
   // Portfolio Nav

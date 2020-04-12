@@ -60,14 +60,28 @@ $('.header .call-to-actions-home .section-port').on("click", function(e) {
 
 });
 
-
 // Start Loding Site
 $(window).load(function () {
-  $('.preloader').addClass('loaded');
+  $(".preloader").addClass("loaded");
 });
 // End Loding Site
 
- 
+var settings = {
+  async: true,
+  crossDomain: true,
+  url:
+    "https://covid-19-coronavirus-statistics.p.rapidapi.com/v1/stats?country=Canada",
+  method: "GET",
+  headers: {
+    "x-rapidapi-host": "covid-19-coronavirus-statistics.p.rapidapi.com",
+    "x-rapidapi-key": "d0f48ca335mshc0c76b427f810adp10e416jsn6e3a2045216a",
+  },
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
 // Show - Hide the Requested Page
 $('.nav-btn').on('click' , function () {
   $('.home-site > section.active').removeClass('active');
